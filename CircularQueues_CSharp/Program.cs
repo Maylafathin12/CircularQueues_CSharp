@@ -48,7 +48,7 @@ namespace CircularQueues_CSharp
             else
             {
                 if (FRONT == max - 1)
-                    FRONT= 0;
+                    FRONT = 0;
                 else
                     FRONT = FRONT + 1;
             }
@@ -64,7 +64,7 @@ namespace CircularQueues_CSharp
                 return;
             }
             Console.WriteLine("\nElements in the queue are........\n");
-            if ( FRONT_positition <= REAR_positition)
+            if (FRONT_positition <= REAR_positition)
             {
                 while (FRONT_positition <= REAR_positition)
                 {
@@ -75,13 +75,13 @@ namespace CircularQueues_CSharp
             }
             else
             {
-                while ( FRONT_positition <= max - 1)
+                while (FRONT_positition <= max - 1)
                 {
                     Console.WriteLine(queue_array[FRONT_positition] + "   ");
                     FRONT_positition++;
                 }
                 FRONT_positition = 0;
-                while(FRONT_positition <= REAR_positition)
+                while (FRONT_positition <= REAR_positition)
                 {
                     Console.Write(queue_array[FRONT_positition] + "   ");
                     FRONT_positition++;
@@ -89,13 +89,28 @@ namespace CircularQueues_CSharp
                 Console.WriteLine();
             }
         }
-
-    }
-    class Program
-    {
         static void Main(string[] args)
         {
-            
+            Queues q = new Queues();
+            char ch;
+            while (true)
+            {
+                try
+                {
+                    Console.WriteLine("Menu ");
+                    Console.WriteLine("1. Implement insert operation");
+                    Console.WriteLine("1. Implement delete operation");
+                    Console.WriteLine("3. Display values ");
+                    Console.WriteLine("4. Exit");
+                    Console.WriteLine("\n Enter your choice (1-4): ");
+                    ch = Convert.ToChar(Console.ReadLine());
+                    Console.WriteLine();
+                    switch (ch)
+                    {
+
+                    }
+                }
+            }
         }
     }
 }
