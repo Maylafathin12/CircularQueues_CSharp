@@ -117,8 +117,9 @@ namespace CircularQueues_CSharp
                             break;
                         case '2':
                             {
-
+                                q.remove();
                             }
+                            break;
                     }
                 }
             }
