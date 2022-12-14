@@ -107,7 +107,18 @@ namespace CircularQueues_CSharp
                     Console.WriteLine();
                     switch (ch)
                     {
+                        case '1':
+                            {
+                                Console.WriteLine("\nEnter a number: ");
+                                int num = Convert.ToInt32(Console.ReadLine());
+                                Console.WriteLine();
+                                q.insert(num);
+                            }
+                            break;
+                        case '2':
+                            {
 
+                            }
                     }
                 }
             }
